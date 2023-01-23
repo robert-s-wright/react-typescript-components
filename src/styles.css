@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Buttons */
+
+button {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.custom-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 5px;
+  border: 0px;
+  transition: 0.4s all ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 3px black;
+}
+
+.custom-button::after {
+  content: "";
+  z-index: 5;
+  background-color: white;
+  opacity: 10%;
+  position: absolute;
+  width: 100%;
+  height: 300%;
+  left: 0;
+  border-radius: 50vh;
+  bottom: -300%;
+  transition: all 0.2s ease;
+}
+
+.clicked::after {
+  bottom: -100%;
+}
+
+.custom-button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 5px black;
+}
+
+.clicked {
+  box-shadow: 0px 0px 7px black;
+}
+
+.button-primary {
+  background-color: hsla(200, 80%, 30%);
+}
+
+.button-primary:hover {
+  background-color: hsla(200, 80%, 20%);
+}
+
+.button-secondary {
+  background-color: hsla(200, 80%, 45%);
+}
+
+.button-secondary:hover {
+  background-color: hsla(200, 80%, 35%);
+}
+
+.button-info {
+  background-color: hsla(200, 80%, 60%);
+}
+
+.button-info:hover {
+  background-color: hsla(200, 80%, 50%);
+}
+
+.button-success {
+  background-color: hsla(140, 100%, 30%);
+}
+
+.button-success:hover {
+  background-color: hsla(140, 100%, 20%);
+}
+
+.button-warning {
+  background-color: hsla(35, 100%, 50%);
+}
+
+.button-warning:hover {
+  background-color: hsla(35, 100%, 40%);
+}
+
+.button-danger {
+  background-color: hsla(0, 80%, 45%);
+}
+
+.button-danger:hover {
+  background-color: hsla(0, 80%, 35%);
+}
+
+.sm {
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.sm * {
+  font-size: 18px !important;
+}
+
+.md {
+  padding: 3px 9px;
+  border-radius: 5px;
+}
+
+.md * {
+  font-size: 30px !important;
+}
+
+.lg {
+  padding: 4px 12px;
+  border-radius: 5px;
+}
+
+.lg * {
+  font-size: 40px !important;
+}
