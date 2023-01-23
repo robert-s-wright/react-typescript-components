@@ -9,12 +9,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Button
-          variant="danger"
+          variant="transparent"
+          color="danger"
           size="lg"
           icon={<Mood />}
-          onClick={(e) => console.log(e)}
+          // onClick={(e) => console.log(e)}
         >
-          <div>Click Me!</div>
+          Click Me!
         </Button>
       </header>
     </div>

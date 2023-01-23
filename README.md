@@ -12,6 +12,12 @@ Renders a Button element.
 
 ##### `variant`
 
+- fill - Renders a filled button with background-color matching the color specified in color prop.
+- outline - Renders a transparent button with border color matching the color specified in color prop.
+- transparent - Renders a transparent button with background-color matching the color specified in color prop when the button is hovered.
+
+##### `color`
+
 - primary (default if no variant prop is passed to the component)
 - secondary
 - info

@@ -48,57 +48,208 @@ button {
   box-shadow: 0px 0px 7px black;
 }
 
-.button-primary {
+.button-disabled {
+  background-color: hsla(0, 0%, 85%);
+  box-shadow: none;
+  cursor: default !important;
+  color: hsla(0, 0%, 70%);
+}
+
+/*filled buttons */
+
+.button-fill-primary {
   background-color: hsla(200, 80%, 30%);
 }
 
-.button-primary:hover {
+.button-fill-primary:hover {
   background-color: hsla(200, 80%, 20%);
 }
 
-.button-secondary {
+.button-fill-secondary {
   background-color: hsla(200, 80%, 45%);
 }
 
-.button-secondary:hover {
+.button-fill-secondary:hover {
   background-color: hsla(200, 80%, 35%);
 }
 
-.button-info {
+.button-fill-info {
   background-color: hsla(200, 80%, 60%);
 }
 
-.button-info:hover {
+.button-fill-info:hover {
   background-color: hsla(200, 80%, 50%);
 }
 
-.button-success {
+.button-fill-success {
   background-color: hsla(140, 100%, 30%);
 }
 
-.button-success:hover {
+.button-fill-success:hover {
   background-color: hsla(140, 100%, 20%);
 }
 
-.button-warning {
+.button-fill-warning {
   background-color: hsla(35, 100%, 50%);
 }
 
-.button-warning:hover {
+.button-fill-warning:hover {
   background-color: hsla(35, 100%, 40%);
 }
 
-.button-danger {
+.button-fill-danger {
   background-color: hsla(0, 80%, 45%);
 }
 
-.button-danger:hover {
+.button-fill-danger:hover {
   background-color: hsla(0, 80%, 35%);
 }
 
+/*outlined styling */
+.button-outline-primary {
+  background-color: transparent;
+  border: 2px solid hsla(200, 80%, 30%);
+  color: hsla(200, 80%, 30%);
+}
+
+.button-outline-primary:hover {
+  background-color: hsla(200, 80%, 20%);
+  color: white;
+}
+
+.button-outline-secondary {
+  background-color: transparent;
+  border: 2px solid hsla(200, 80%, 45%);
+  color: hsla(200, 80%, 45%);
+}
+
+.button-outline-secondary:hover {
+  background-color: hsla(200, 80%, 35%);
+  color: white;
+}
+
+.button-outline-info {
+  background-color: transparent;
+  border: 2px solid hsla(200, 80%, 60%);
+  color: hsla(200, 80%, 60%);
+}
+
+.button-outline-info:hover {
+  background-color: hsla(200, 80%, 50%);
+  color: white;
+}
+
+.button-outline-success {
+  background-color: transparent;
+  border: 2px solid hsla(140, 100%, 30%);
+  color: hsla(140, 100%, 30%);
+}
+
+.button-outline-success:hover {
+  background-color: hsla(140, 100%, 20%);
+  color: white;
+}
+
+.button-outline-warning {
+  background-color: transparent;
+  border: 2px solid hsla(35, 100%, 50%);
+  color: hsla(35, 100%, 50%);
+}
+
+.button-outline-warning:hover {
+  background-color: hsla(35, 100%, 40%);
+  color: white;
+}
+
+.button-outline-danger {
+  background-color: transparent;
+  border: 2px solid hsla(0, 80%, 45%);
+  color: hsla(0, 80%, 45%);
+}
+
+.button-outline-danger:hover {
+  background-color: hsla(0, 80%, 35%);
+  color: white;
+}
+
+/*transparent styling */
+.button-transparent-primary {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: hsla(200, 80%, 30%);
+}
+
+.button-transparent-primary:hover {
+  background-color: hsla(200, 80%, 20%);
+  color: white;
+}
+
+.button-transparent-secondary {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: hsla(200, 80%, 45%);
+}
+
+.button-transparent-secondary:hover {
+  background-color: hsla(200, 80%, 35%);
+  color: white;
+}
+
+.button-transparent-info {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: hsla(200, 80%, 60%);
+}
+
+.button-transparent-info:hover {
+  background-color: hsla(200, 80%, 50%);
+  color: white;
+}
+
+.button-transparent-success {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: hsla(140, 100%, 30%);
+}
+
+.button-transparent-success:hover {
+  background-color: hsla(140, 100%, 20%);
+  color: white;
+}
+
+.button-transparent-warning {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: hsla(35, 100%, 50%);
+}
+
+.button-transparent-warning:hover {
+  background-color: hsla(35, 100%, 40%);
+  color: white;
+}
+
+.button-transparent-danger {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: hsla(0, 80%, 45%);
+}
+
+.button-transparent-danger:hover {
+  background-color: hsla(0, 80%, 35%);
+  color: white;
+}
+
+/*sizing*/
 .sm {
   padding: 2px 6px;
   border-radius: 3px;
+  font-size: 18px !important;
 }
 
 .sm * {
@@ -108,6 +259,7 @@ button {
 .md {
   padding: 3px 9px;
   border-radius: 5px;
+  font-size: 30px !important;
 }
 
 .md * {
@@ -117,6 +269,7 @@ button {
 .lg {
   padding: 4px 12px;
   border-radius: 5px;
+  font-size: 40px !important;
 }
 
 .lg * {
