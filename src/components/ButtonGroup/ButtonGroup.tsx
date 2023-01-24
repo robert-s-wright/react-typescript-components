@@ -9,7 +9,7 @@ type ButtonGroupProps = {
   orientation?: "column" | "row";
   children: React.ReactElement<ButtonProps> | React.ReactElement<ButtonProps>[];
   gap?: number;
-  align?: "flex-start" | "flex-end" | "center";
+  align?: "flex-start" | "flex-end" | "center" | "baseline" | "stretch";
   justify?:
     | "flex-start"
     | "flex-end"
