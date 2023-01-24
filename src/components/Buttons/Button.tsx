@@ -2,10 +2,10 @@ import React, { ReactElement, useRef, useEffect } from "react";
 
 import "../../styles.css";
 
-type ButtonProps = {
+export type ButtonProps = {
   variant?: "fill" | "outline" | "transparent";
   color?: "primary" | "secondary" | "info" | "success" | "warning" | "danger";
-  children: string | ReactElement;
+  children: string | React.ReactNode;
   size?: "sm" | "md" | "lg";
   icon?: React.CElement<SVGElement, any>;
   onClick?: (e: any) => void;

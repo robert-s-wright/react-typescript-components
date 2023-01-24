@@ -19,6 +19,7 @@ button {
   position: relative;
   overflow: hidden;
   box-shadow: 0px 0px 3px black;
+  box-sizing: border-box;
 }
 
 .custom-button::after {
@@ -59,6 +60,7 @@ button {
 
 .button-fill-primary {
   background-color: hsla(200, 80%, 30%);
+  border: 2px solid hsla(200, 80%, 30%);
 }
 
 .button-fill-primary:hover {
@@ -67,6 +69,7 @@ button {
 
 .button-fill-secondary {
   background-color: hsla(200, 80%, 45%);
+  border: 2px solid hsla(200, 80%, 45%);
 }
 
 .button-fill-secondary:hover {
@@ -75,6 +78,7 @@ button {
 
 .button-fill-info {
   background-color: hsla(200, 80%, 60%);
+  border: 2px solid hsla(200, 80%, 60%);
 }
 
 .button-fill-info:hover {
@@ -83,6 +87,7 @@ button {
 
 .button-fill-success {
   background-color: hsla(140, 100%, 30%);
+  border: 2px solid hsla(140, 100%, 30%);
 }
 
 .button-fill-success:hover {
@@ -91,6 +96,7 @@ button {
 
 .button-fill-warning {
   background-color: hsla(35, 100%, 50%);
+  border: 2px solid hsla(35, 100%, 50%);
 }
 
 .button-fill-warning:hover {
@@ -99,6 +105,7 @@ button {
 
 .button-fill-danger {
   background-color: hsla(0, 80%, 45%);
+  border: 2px solid hsla(0, 80%, 45%);
 }
 
 .button-fill-danger:hover {
@@ -182,6 +189,7 @@ button {
 
 .button-transparent-primary:hover {
   background-color: hsla(200, 80%, 20%);
+  border: 2px solid hsla(200, 80%, 20%);
   color: white;
 }
 
@@ -194,6 +202,7 @@ button {
 
 .button-transparent-secondary:hover {
   background-color: hsla(200, 80%, 35%);
+  border: 2px solid hsla(200, 80%, 35%);
   color: white;
 }
 
@@ -206,6 +215,7 @@ button {
 
 .button-transparent-info:hover {
   background-color: hsla(200, 80%, 50%);
+  border: 2px solid hsla(200, 80%, 50%);
   color: white;
 }
 
@@ -218,6 +228,7 @@ button {
 
 .button-transparent-success:hover {
   background-color: hsla(140, 100%, 20%);
+  border: 2px solid hsla(140, 100%, 20%);
   color: white;
 }
 
@@ -230,6 +241,7 @@ button {
 
 .button-transparent-warning:hover {
   background-color: hsla(35, 100%, 40%);
+  border: 2px solid hsla(35, 100%, 40%);
   color: white;
 }
 
@@ -242,6 +254,7 @@ button {
 
 .button-transparent-danger:hover {
   background-color: hsla(0, 80%, 35%);
+  border: 2px solid hsla(0, 80%, 35%);
   color: white;
 }
 
@@ -274,4 +287,19 @@ button {
 
 .lg * {
   font-size: 40px !important;
+}
+
+/* Button Groups */
+
+.button-group {
+  display: flex;
+  width: 100%;
+}
+
+.button-group.row {
+  flex-direction: row;
+}
+
+.button-group.column {
+  flex-direction: column;
 }
